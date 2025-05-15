@@ -20,4 +20,7 @@ def create_app():
     from .routes_app.alunos_routes import alunos_bp
     app.register_blueprint(alunos_bp)
 
+    from .routes_app.cursos_routes import cursos_bp
+    app.register_blueprint(cursos_bp)
+
     return app
